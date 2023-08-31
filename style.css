@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-desktop.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-desktop-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -25,13 +25,6 @@
 }
 
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
-
   background: var(--bg-url) no-repeat top center/cover;
 }
 
@@ -41,15 +34,13 @@ body * {
 }
 
 #container {
-  width: 360px;
-  /* height: 712px; >>> No CSS não precisamos especificar a altura, porque ela é fluida de acordo com a quantidade de materiais nas caixas*/
-  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
 
 /* profile */
-/* Podemos colocar o alinhamento na ID pai ou usar o display:block; + margin:auto; nas IDs filhas*/
 #profile {
   text-align: center;
   padding: 24px;
@@ -66,7 +57,6 @@ body * {
 }
 
 /* switch */
-
 #switch {
   position: relative;
   width: 64px;
